@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3E948F6E1E8BA73F0062170F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E948F6D1E8BA73F0062170F /* AppDelegate.swift */; };
-		3E948F701E8BA73F0062170F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E948F6F1E8BA73F0062170F /* ViewController.swift */; };
+		3E948F701E8BA73F0062170F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E948F6F1E8BA73F0062170F /* CardsViewController.swift */; };
 		3E948F731E8BA73F0062170F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E948F711E8BA73F0062170F /* Main.storyboard */; };
 		3E948F751E8BA73F0062170F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E948F741E8BA73F0062170F /* Assets.xcassets */; };
 		3E948F781E8BA73F0062170F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E948F761E8BA73F0062170F /* LaunchScreen.storyboard */; };
+		3E95C1EF1E8BC49C00BA91DB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E95C1EE1E8BC49C00BA91DB /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E948F6A1E8BA73F0062170F /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E948F6D1E8BA73F0062170F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E948F6F1E8BA73F0062170F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E948F6F1E8BA73F0062170F /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		3E948F721E8BA73F0062170F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E948F741E8BA73F0062170F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E948F771E8BA73F0062170F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E948F791E8BA73F0062170F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E95C1EE1E8BC49C00BA91DB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		3E948F6C1E8BA73F0062170F /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				3E95C1ED1E8BC48000BA91DB /* View Controllers */,
 				3E948F6D1E8BA73F0062170F /* AppDelegate.swift */,
-				3E948F6F1E8BA73F0062170F /* ViewController.swift */,
 				3E948F711E8BA73F0062170F /* Main.storyboard */,
 				3E948F741E8BA73F0062170F /* Assets.xcassets */,
 				3E948F761E8BA73F0062170F /* LaunchScreen.storyboard */,
 				3E948F791E8BA73F0062170F /* Info.plist */,
 			);
 			path = Tinder;
+			sourceTree = "<group>";
+		};
+		3E95C1ED1E8BC48000BA91DB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E948F6F1E8BA73F0062170F /* CardsViewController.swift */,
+				3E95C1EE1E8BC49C00BA91DB /* ProfileViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E948F701E8BA73F0062170F /* ViewController.swift in Sources */,
+				3E95C1EF1E8BC49C00BA91DB /* ProfileViewController.swift in Sources */,
+				3E948F701E8BA73F0062170F /* CardsViewController.swift in Sources */,
 				3E948F6E1E8BA73F0062170F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +313,7 @@
 				3E948F7E1E8BA73F0062170F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
